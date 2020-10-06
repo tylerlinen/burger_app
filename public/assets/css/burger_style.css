@@ -1,0 +1,55 @@
+body {
+    width: 99%;
+    height: 900px;
+    background-color: rgb(102, 255, 120);
+    }
+
+#header {
+    margin-top: 28px;
+    }
+
+.list-reset {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    border: 0;
+    }
+
+.userInput {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+    }
+
+#userInputArea {
+    width: 300px;
+    height: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: auto;
+    font-size: 40px;
+    }
+
+.input {
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    }
+
+.button-size {
+    padding-bottom: 25px;
+    }
+
+#userInputButton {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    }
+
+h1 {
+    color: rgb(255, 213, 0);
+    }
+
+.eaten {
+    color: brown;
+    background-color: burlywood;
+}
