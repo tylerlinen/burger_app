@@ -2,20 +2,24 @@
 
 <h2>Burgers have not been eaten!</h2>
 
-<ul>
+<ul id = "notdevoured">
   {{#each burger}}
     {{#unless devoured}}
-     <li> {{this.burgerName}}</li>
+     <li> {{this.id}}.{{this.burgerName}}</li>
+     <button class="change-devoured" data-id="{{id}}" data-newDevoured="{{devoured}}">
+		{{#if devoured}}EATEN!{{/if}}
+	</button>
+
     {{/unless}}
   {{/each}}
 </ul>
 
 <h2>Burger was devoured!</h2>
 
-<ul>
+<ul id="beendevoured">
   {{#each burger}}
     {{#if devoured}}
-     <li> {{this.id}}.  {{this.burgerName}}</li>
+     <li> {{this.id}}.{{this.burgerName}}</li>
     {{/if}}
   {{/each}}
 </ul>
