@@ -5,8 +5,8 @@
 <ul id = "notdevoured">
   {{#each burger}}
     {{#unless devoured}}
-     <li> {{this.id}}.{{this.burgerName}}</li>
-     <button class="change-devoured" data-id="{{id}}" data-newDevoured="{{devoured}}">
+     <li>{{this.burgerName}}</li>
+     <button class="change-devoured" data-id="{{id}}" data-newDevoured="{{devoured}}">Eat Burger!
 		{{#if devoured}}EATEN!{{/if}}
 	</button>
 
@@ -19,7 +19,7 @@
 <ul id="beendevoured">
   {{#each burger}}
     {{#if devoured}}
-     <li> {{this.id}}.{{this.burgerName}}</li>
+     <li> {{this.burgerName}}</li>
     {{/if}}
   {{/each}}
 </ul>
