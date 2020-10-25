@@ -3,8 +3,8 @@ var mysql = require("mysql");
 require("dotenv").config();
 var connection;
 
-if(process.env.burgerDB){
-connection = mysql.createConnection(process.env.burgerDB)
+if(process.env.JAWSDB_URL){
+connection = mysql.createConnection(JAWSDB_URL)
 }
 else{
 connection = mysql.createConnection({
@@ -12,7 +12,7 @@ connection = mysql.createConnection({
   port: 3306,
   user: "root",
   password: process.env.mysqlpassword,
-  database: `m4t3d5g4lsp6c8wv`
+  database: "burgers_db"
 });
 }
 // Make connection.
